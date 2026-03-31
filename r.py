@@ -1,21 +1,20 @@
-ab='rm'
-ba=ab.replace('r','ra')
-print(ba)
+var1=int(input("Enter a number: "))
+var2=float(input("Enter another number: "))
+var3=str(input("Enter a string: "))
+var4=bool(input("Enter a boolean value (True/False): "))
+print(type(var1))
+print(type(var2))
+print(type(var3))
+print(type(var4))
 
-a = 'ram'
-trans_table = str.maketrans({'r': 'R', 'a': 'A', 'm': 'M'})
-b = a.translate(trans_table)
-print(b)
+#convert string to integer and adding something to it
+str_num=input("Enter a number as a string: ")
+int_num=int(str_num)
+print("The integer value is:",int_num)
+print("The integer value plus 50 is:",int_num + 50)
 
-inpu='ram'
-output=inpu.maketrans('ram','api')
-print(inpu.translate(output))
-
-fn='   Laxmi    Prasad    Devkota   '
-a=fn.strip()
-b=a.replace('    ','_')
-print(b)
-
-c=fn.strip()
-r="_".join(c.split())
-print(r)
+#creating a list of 3 fruits and a dictionary with name and age
+fruits=["apple","banana","orange"]
+print("List of fruits:",fruits)
+person={"name":"Sandesh","age":18}
+print("Dictionary with name and age:",person)
